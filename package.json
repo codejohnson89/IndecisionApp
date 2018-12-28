@@ -1,0 +1,41 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "description": "Note taking app",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack --watch",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "author": "Micah Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "^0.28.4",
+    "express": "^4.15.4",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.10.0",
+    "normalize.css": "^8.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-modal": "^2.2.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.18.2",
+    "validator": "^8.0.0",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^3.0.2"
+  }
+}
